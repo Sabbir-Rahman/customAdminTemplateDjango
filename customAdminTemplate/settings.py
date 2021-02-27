@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'admin_menu',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backened'
 ]
+ADMIN_STYLE = {
+    'primary-color': '#6640eb',
+    'secondary-color': '#092117',
+    'tertiary-color': '#51B48E'
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

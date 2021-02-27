@@ -10,6 +10,7 @@ admin.site.site_header = 'Admin Tutorial Dashboard'
 class testAdmin(admin.ModelAdmin):
     list_display = ('title', 'created','font_size_html_display')
     list_filter = ('created',)
+    menu_title = "Users"
     change_list_template = 'admin/test/test_change_list.html'
 
     def get_urls(self):
